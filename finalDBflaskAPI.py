@@ -66,7 +66,7 @@ def invoiceGen(path):
                    "Customer Number": int(cusNum), 
                    "Invoice Number": int(invoiceNum), 
                    "Invoice Date": str(invoiceDate), 
-                   "Balance": int(cusBalance), 
+                   "Balance": float(cusBalance), 
                    "Invoice": invoiceDF.to_dict('index')}
     
     return jsonify(fullInvoice)
